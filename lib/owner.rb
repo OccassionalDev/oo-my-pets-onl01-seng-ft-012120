@@ -61,6 +61,10 @@ class Owner
       cat.mood = "happy"
     end 
   end 
+  
+  def list_pets 
+    return cats + dogs 
+  end 
     
     
 end
