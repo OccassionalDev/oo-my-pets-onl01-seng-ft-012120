@@ -31,7 +31,7 @@ class Owner
   end 
   
   def cats 
-    return cats.all.select do |cat|
+    return Cat.all.select do |cat|
       cat.owner = self
     end 
     
