@@ -29,5 +29,10 @@ class Owner
   def self.reset_all
     self.all.clear
   end 
+  
+  def cats 
+    return cats.all.select do |cat|
+      cat.owner = self
+    end 
     
 end
