@@ -31,8 +31,8 @@ class Owner
   end 
   
   def cats 
-    return Cat.all.select do |kitten|
-      kitten.all = self
+    return Cat.all.select do |cat|
+      cat.owner = self
     end
   end 
     
